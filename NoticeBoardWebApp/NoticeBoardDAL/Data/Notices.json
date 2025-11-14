@@ -1,0 +1,158 @@
+﻿{
+  "Advertisers": [
+    {
+      "Id": 1,
+      "FirstName": "Noa",
+      "LastName": "Katz",
+      "UserName": "Noa Katz",
+      "Password": "0501112233",
+      "PhoneNumber": "0501112233",
+      "Email": "noa@startup.co.il",
+      "Address": "Tel Aviv"
+    },
+    {
+      "Id": 2,
+      "FirstName": "Eli",
+      "LastName": "Rosen",
+      "UserName": "Eli Rosen",
+      "Password": "0524445566",
+      "PhoneNumber": "0524445566",
+      "Email": "eli@funtech.io",
+      "Address": "Haifa"
+    },
+    {
+      "Id": 3,
+      "FirstName": "Rina",
+      "LastName": "Ben Ami",
+      "UserName": "Rina Ben Ami",
+      "Password": "0549998877",
+      "PhoneNumber": "0549998877",
+      "Email": "rina@happydevs.com",
+      "Address": "Modiin"
+    },
+    {
+      "Id": 4,
+      "FirstName": "Amit",
+      "LastName": "Shalev",
+      "UserName": "Amit Shalev",
+      "Password": "0533332221",
+      "PhoneNumber": "0533332221",
+      "Email": "amit@bytehub.org",
+      "Address": "Jerusalem"
+    }
+  ],
+  "NoticeTypes": [
+    {
+      "Id": 1,
+      "Type": "For Sale"
+    },
+    {
+      "Id": 2,
+      "Type": "For Rent"
+    },
+    {
+      "Id": 3,
+      "Type": "Wanted"
+    },
+    {
+      "Id": 4,
+      "Type": "Community Event"
+    },
+    {
+      "Id": 5,
+      "Type": "Internal Notice"
+    }
+  ],
+  "Notices": [
+    {
+      "Id": 1,
+      "NoticeName": "עמדת עבודה פנויה",
+      "NoticeTitle": "להשכרה עמדת עבודה ליד החלון",
+      "NoticeContent": "נוף לים, הרבה אור טבעי, ומי שיבוא — יקבל אחריות על עציץ שכמעט שורד.",
+      "Area": "Tel Aviv",
+      "TypeId": 2,
+      "AdvertiserId": 1
+    },
+    {
+      "Id": 2,
+      "NoticeName": "דרוש מפתח",
+      "NoticeTitle": "מפתח/ת עם אהבה לקוד נקי (וגם לקפה שחור)",
+      "NoticeContent": "אנחנו מחפשים מישהו שלא רק יודע לכתוב קוד — אלא גם לצחוק כשהוא נשבר.",
+      "Area": "Haifa",
+      "TypeId": 3,
+      "AdvertiserId": 2
+    },
+    {
+      "Id": 3,
+      "NoticeName": "פינת קפה חדשה",
+      "NoticeTitle": "הושקה הפינה החדשה! קפה אמיתי, לא נס עלית",
+      "NoticeContent": "בואו ליהנות מריח של אספרסו טרי ודיון פילוסופי קצר על באגים.",
+      "Area": "Modiin",
+      "TypeId": 5,
+      "AdvertiserId": 3
+    },
+    {
+      "Id": 4,
+      "NoticeName": "סדנת ניהול זמן",
+      "NoticeTitle": "איך להספיק יותר בלי להישאר עד חצות",
+      "NoticeContent": "מפגש קצר ומעשיר בהנחיית יועצת ארגונית. מובטח לפחות רגע אחד של הארה.",
+      "Area": "Jerusalem",
+      "TypeId": 4,
+      "AdvertiserId": 4
+    },
+    {
+      "Id": 5,
+      "NoticeName": "מחשב למכירה",
+      "NoticeTitle": "MacBook Pro 2021 – נקי מבאגים (בערך)",
+      "NoticeContent": "עבר רק שלושה מפתחים, כולם אחראיים ונזהרו לא לאכול עליו.",
+      "Area": "Tel Aviv",
+      "TypeId": 1,
+      "AdvertiserId": 1
+    },
+    {
+      "Id": 6,
+      "NoticeName": "חדר ישיבות פנוי",
+      "NoticeTitle": "הזדמנות נדירה – חדר ישיבות פנוי באמצע היום!",
+      "NoticeContent": "מהרו להזמין לפני שמישהו ישים שם את הקיטבג שלו.",
+      "Area": "Haifa",
+      "TypeId": 5,
+      "AdvertiserId": 2
+    },
+    {
+      "Id": 7,
+      "NoticeName": "ערב צוות",
+      "NoticeTitle": "ערב פיצות ומשחקי קוד",
+      "NoticeContent": "הפעם בלי מצגות, רק אוכל טוב, חברה טובה, וקצת תחרות בריאה.",
+      "Area": "Modiin",
+      "TypeId": 4,
+      "AdvertiserId": 3
+    },
+    {
+      "Id": 8,
+      "NoticeName": "אוזניות חדשות",
+      "NoticeTitle": "נמכרות אוזניות שמצליחות באמת לבטל רעשים",
+      "NoticeContent": "כולל את הרעשים של ‘למה זה לא עובד’.",
+      "Area": "Jerusalem",
+      "TypeId": 1,
+      "AdvertiserId": 4
+    },
+    {
+      "Id": 9,
+      "NoticeName": "מנוי לספורט",
+      "NoticeTitle": "מישהו רוצה להצטרף למנוי קבוצתי לחדר כושר?",
+      "NoticeContent": "הנחה לעובדי הסטארטאפ, והבטחה לא לשאול אם באמת הלכת.",
+      "Area": "Tel Aviv",
+      "TypeId": 3,
+      "AdvertiserId": 1
+    },
+    {
+      "Id": 10,
+      "NoticeName": "שולחן מתכוונן",
+      "NoticeTitle": "שולחן חשמלי להשכרה או מכירה",
+      "NoticeContent": "עובר בקלות מישיבה לעמידה – למי שמחליף פוזות לפי מצב הפרויקט.",
+      "Area": "Haifa",
+      "TypeId": 2,
+      "AdvertiserId": 2
+    }
+  ]
+}
