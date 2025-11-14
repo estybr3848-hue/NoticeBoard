@@ -1,0 +1,12 @@
+<app-notices-filter 
+    [types]="typesList" 
+    [advertisers]="advertisersList" 
+    (filterChanged)="applyFilter($event)">
+</app-notices-filter>
+
+<app-notices-cards 
+    [filteredNotices]="filteredNotices" 
+    [types]="typesList" 
+    [personal]="personal"
+    (noticeChanged)="handleNoticeChanged()">
+</app-notices-cards>

@@ -1,0 +1,22 @@
+<ng-container class="home-page">
+    <ng-container class="header">
+        <app-header>
+            <ng-container *ngIf="isRegisteredUser">
+                <button mat-raised-button color="primary" (click)="personalAreaView = true">
+                    <mat-icon>person</mat-icon>
+                    לאזור האישי
+                </button>
+            </ng-container>
+        </app-header>
+    </ng-container>
+    <ng-container *ngIf="!personalAreaView; else personalArea">
+        <div class="notices-row">
+            <app-notices class="notices-row-component"></app-notices>
+        </div>
+    </ng-container>
+    <ng-template #personalArea>
+        <div class="notices-row">
+            <app-notices class="notices-row-component" [personal]="true"></app-notices>
+        </div>
+    </ng-template>
+</ng-container>

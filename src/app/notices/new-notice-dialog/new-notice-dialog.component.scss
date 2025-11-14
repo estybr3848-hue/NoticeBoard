@@ -1,0 +1,44 @@
+.notice-dialog-card {
+  width: 500px;
+  max-width: 90vw;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.dialog-header {
+  align-self: center;
+}
+
+.dialog-title {
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 10px 0;
+  color: #3f51b5;
+}
+
+.notice-form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.name-row {
+  display: flex;
+  gap: 4px;
+  flex-direction: row-reverse;
+}
+
+.full-width {
+  flex: 1;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  padding: 10px;
+}
+
+.buttons {
+  justify-content: center;
+}

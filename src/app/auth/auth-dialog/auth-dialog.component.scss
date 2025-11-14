@@ -1,0 +1,40 @@
+.login-dialog-container {
+  width: 320px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.full-width {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.guest-login {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #555;
+  cursor: pointer;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: -8px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.guest-login:hover {
+  color: #1976d2;
+}

@@ -1,0 +1,28 @@
+<div class="filters-container" dir="rtl">
+  <form [formGroup]="filterForm" class="filter-form">
+    <mat-form-field appearance="fill">
+      <mat-label>סוג</mat-label>
+      <mat-select formControlName="typeId">
+        <mat-option value="">הכל</mat-option>
+        <mat-option *ngFor="let t of types" [value]="t.id">
+          {{ t.type }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>מפרסם</mat-label>
+      <mat-select formControlName="advertiserId">
+        <mat-option value="">הכל</mat-option>
+        <mat-option *ngFor="let u of advertisers" [value]="u.id">
+          {{ u.firstName }} {{ u.lastName }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="text-search">
+      <mat-label>חיפוש...</mat-label>
+      <input matInput formControlName="text" />
+    </mat-form-field>
+  </form>
+</div>

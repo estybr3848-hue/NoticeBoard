@@ -1,0 +1,49 @@
+<div class="notices-wrapper">
+    <ng-container *ngIf="personal">
+        <button mat-fab color="primary" matTooltip="הוסף מודעה חדשה" aria-label="הוסף מודעה" (click)="AddNotice()">
+            <span class="plus-icon">+</span>
+        </button>
+    </ng-container>
+
+    <div class="notices-container" *ngIf="(filteredNotices)?.length; else noNotices">
+        <mat-card class="notice-card" *ngFor="let notice of filteredNotices">
+            <div class="notice-haeder">
+                <div class="edit-buttons" *ngIf="personal">
+                    <button mat-icon-button (click)="onEdit(notice.id)" aria-label="עריכה">
+                        <mat-icon>edit</mat-icon>
+                    </button>
+                    <button mat-icon-button (click)="onDelete(notice.id)" aria-label="מחיקה">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </div>
+                <div class="notice-area">{{ notice.area }}</div>
+            </div>
+
+            <mat-card-title class="notice-title">
+                {{ notice.noticeTitle }}
+            </mat-card-title>
+
+            <mat-card-content class="notice-content">
+                <p>{{ notice.noticeContent }}</p>
+            </mat-card-content>
+
+            <mat-divider></mat-divider>
+
+            <div class="notice-footer">
+                <mat-icon aria-hidden="false" aria-label="advertiser icon">person</mat-icon>
+                <div class="advertiser-info">
+                    <div class="advertiser-name">שם : {{ notice.advertiser.firstName }} {{ notice.advertiser.lastName }}
+                    </div>
+                    <div class="advertiser-phone">פלאפון: {{ notice.advertiser.phoneNumber }}</div>
+                    <div class="advertiser-email">אימייל: {{ notice.advertiser.email }}</div>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+
+    <ng-template #noNotices>
+        <div class="no-notices">
+            <p>אין כרגע מודעות להצגה.</p>
+        </div>
+    </ng-template>
+</div>
